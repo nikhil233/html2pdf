@@ -1,0 +1,94 @@
+<head>
+    <style>
+      @page
+      {
+          size:  auto;   /* auto is the initial value */
+          margin: 0mm;  /* this affects the margin in the printer settings */
+      }
+      html
+      {
+          background-color: #FFFFFF;
+          margin: 0px;  /* this affects the margin on the html before sending to printer */
+      }
+    
+      body
+      {
+          /*border: solid 1px blue ;*/
+          margin: 0; /* margin you want for the content */
+          font-family: "brandon";
+          color:#173d64;
+      }
+      .main-table {
+        background: url("https://edmingle.b-cdn.net/customers/Innomatics/AWS_Sample_Certificate.jpg");
+        width : 8.25in;
+        background-repeat: no-repeat;
+       height : 11.75in;
+        background-image-resize:6;
+      }
+      .full-width{
+        width: 100%;
+      }
+      .text-center{
+        text-align:center;
+      }
+      .apple{
+        font-family: "apple";
+        color: #0d2e57;
+      }
+      td{
+        color : white;
+      }
+    </style>
+    </head>
+    <body>
+    <table style="width:100% ; " cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td align="center" valign="top">
+                  <table class="main-table full-width" cellspacing="0" style="padding-top:5in;">
+                    <tbody>                  
+                        <tr>
+                          <td colspan="3" style="padding-top:1.1in;">
+                            <table class="full-width">
+                              <tbody>
+                                <tr>
+                                  <td style="width:0.5in">
+                                  </td>
+                                  <td style="width:8.5in" class="text-center" style="font-size:70pt;color:#e31e25;font-family:itcedscr;">
+                                    %student_name%
+                                  </td>
+                                  <td style="width:0.5in">
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="3" style="padding-top:8.9in;padding-bottom:1.1in">
+                            <table class="full-width">
+                                <tbody>
+                                    <tr>
+                                    <td style="width:1in">
+                                    </td>
+                                    <td style="width:4.5in" align="left" style="font-weight: bold;font-size:22pt;color:#000;font-family:bkant;">
+                                    %issued_on%
+                                    </td>
+                                    <td style="width:5in">
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </td>
+                        </tr>
+                       
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+          </tbody>
+      </table>
+    
+    
+    </body>

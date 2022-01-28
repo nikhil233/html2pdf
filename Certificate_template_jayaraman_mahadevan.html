@@ -1,0 +1,138 @@
+<style>
+	@page
+	{
+		size: auto;
+		margin: 0mm;  /* this affects the margin in the printer settings */
+	}
+	html
+	{
+		background-color: #FFFFFF;
+		margin: 0px;  /* this affects the margin on the html before sending to printer */
+	}
+	body {
+		margin:0px;
+		background: url("https://edmingle.b-cdn.net/customers/vyoma/Certificate_template_jayaraman_mahadevan.pptx%20(1).png");
+		background-image-resize:6;
+		color: #0d2e57;
+		font-family: "brandon";
+	}
+
+	div {
+		text-align:center;
+	}
+	.overall-grade {
+		overflow: auto;
+		position: fixed;
+		top: 24.5mm;
+		vertical-align: middle;
+		font-weight: bold;
+		right: 20.5mm;
+		width: 21.25mm;
+
+	}
+
+	.course-name {
+		position: fixed;
+		top: 58.23mm;
+		font-size:23px;
+		text-align: center;
+		width: 100%;
+
+		font-weight: bold;
+
+	}
+	.start-date {
+		position: fixed;
+		top: 79.5mm;
+		left: 59mm;
+		font-weight: bold;
+		font-size: 19px;
+		font-family:georgia;
+
+	}
+
+	.end-date {
+		position: fixed;
+		left: 241mm;
+		top: 79.5mm;
+		font-weight: bold;
+		font-size: 19px;
+		font-family:georgia;
+	}
+
+	.name {
+		position: fixed;
+		top: 95.25mm;
+		font-size: 32px;
+		text-align: center;
+		width: 100%;
+		font-weight: bold;
+		color: #1a00ff;
+		font-family:lucida;
+
+	}
+
+
+	.table-cell {
+    top: 152.6mm;
+		position: fixed;
+		vertical-align: center;
+		text-align: center;
+		height: 10mm;
+		font-family:georgia;
+		padding: 2px;
+		font-weight: bold;
+	}
+
+	.text-center{
+		text-align:center;
+	}
+	.comp {
+		left: 17.27mm;
+		width: 49mm;
+
+	}
+	.writt {
+		left: 66.6mm;
+		width: 41.9mm;
+
+	}
+	.oral {
+		left: 109mm;
+		width: 46.56mm;
+
+	}
+	.other {
+		left: 591px;
+		width: 158px;
+
+	}
+	.proj {
+		left: 749px;
+		width: 167px;
+
+	}
+
+	.over {
+		left: 918px;
+		width: 138px;
+
+	}
+
+
+</style>
+<body>
+<div class="overall-grade text-center"><strong>%overall_grade%</strong></div>
+<div class="course-name text-center"><strong>%course_name%</strong></div>
+<div class="start-date text-center">%start_date%</div>
+<div class="end-date text-center">%end_date%</div>
+<div class="name text-center">%student_name%</div>
+
+	<div class="table-cell text-center comp">%computer_based_assessment%</div>
+	<div class="table-cell text-center writt">%written_assessment%</div>
+	<div class="table-cell text-center oral">%oral_assessment%</div>
+	<div class="table-cell text-center other">%other_skills%</div>
+	<div class="table-cell text-center proj">%project_activities%</div>
+	<div class="table-cell text-center over">%overall_grade%</div>
+
+</body>
